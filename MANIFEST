@@ -1,3 +1,12 @@
-Makefile.PL
-MANIFEST
+Build.PL
+Changes
+configure
+INSTALL
 lib/CGI/Session/BitBucket.pm
+Makefile.PL
+MANIFEST			This list of files
+README
+sample/fake-datastore.pl
+t/pod-coverage.t
+t/pod.t
+META.yml

@@ -1,0 +1,17 @@
+---
+name: CGI-Session-BitBucket
+version: 1.1
+author:
+  - 'Jonathan Buhacoff <jonathan@buhacoff.net> wrote CGI::Session::BitBucket'
+abstract: a module that loses your session data
+license: perl
+generated_by: Module::Build version 0.2806
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
+provides:
+  CGI::Session::BitBucket:
+    file: lib/CGI/Session/BitBucket.pm
+    version: 1.1
+resources:
+  license: http://dev.perl.org/licenses/

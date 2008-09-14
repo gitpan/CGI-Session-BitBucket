@@ -1,22 +1,17 @@
 package CGI::Session::BitBucket;
 
 use Carp;
-use strict;
-# Inheriting necessary functionalities from the 
-# following libraries. Do not change it unless you know
-# what you are doing
+use CGI::Session;
+use CGI::Session::ID::MD5;
 use base qw(
     CGI::Session
     CGI::Session::ID::MD5
     CGI::Session::Serialize::Default
 );
-
-
-# driver specific libraries should go below
-
+use strict;
+use warnings;
 use vars qw($VERSION);
-
-($VERSION) = '1.0';
+($VERSION) = '1.1';
 
 ########################
 # Driver methods follow
@@ -94,7 +89,7 @@ CGI::Session::BitBucket - a module that loses your session data
 =head1 SYNOPSIS
     
     use CGI::Session;
-    $session = new CGI::Session("driver:BitBucket", $sid, {Log=>1});
+    my $session = new CGI::Session("driver:BitBucket", $sid, {Log=>1});
     
 For more options and examples, read the rest of this document and
 consult L<CGI::Session>.
@@ -127,9 +122,10 @@ if you were using something other than the bit bucket for storage.
 
 CGI::Session::BitBucket is Copyright (C) 2004 Jonathan Buhacoff.  All rights reserved.
 
+=head1 LICENSE
+
 This library is free software and can be modified and distributed under the same
 terms as Perl itself. 
-
 
 =head1 AUTHOR
 
@@ -166,4 +162,3 @@ L<Apache::Session|Apache::Session> - an alternative to CGI::Session
 =back
 
 =cut
-
