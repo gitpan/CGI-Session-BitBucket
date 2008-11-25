@@ -4,6 +4,9 @@ use Module::Build;
     (
      module_name => 'CGI::Session::BitBucket',
      license => 'perl',
+     requires => {
+     	'CGI::Session' => '<= 3.95'
+     }
     );
   $build->create_build_script;
 

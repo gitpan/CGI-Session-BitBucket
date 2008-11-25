@@ -11,7 +11,7 @@ use base qw(
 use strict;
 use warnings;
 use vars qw($VERSION);
-($VERSION) = '1.1';
+($VERSION) = '1.2';
 
 ########################
 # Driver methods follow
